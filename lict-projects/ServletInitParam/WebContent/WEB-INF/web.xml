@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<web-app id="WebApp_ID">
+	<display-name>ServletInitParamExample</display-name>
+	<servlet>
+		<servlet-name>MyServlet</servlet-name>
+		<display-name>MyServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.MyServlet</servlet-class>
+		<init-param>
+			<param-name>Name</param-name>
+			<param-value>CUET</param-value>
+			<description></description>
+		</init-param>
+		<init-param>
+			<param-name>Dept</param-name>
+			<param-value>CSE</param-value>
+			<description></description>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServlet</servlet-name>
+		<url-pattern>/MyServlet.view</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

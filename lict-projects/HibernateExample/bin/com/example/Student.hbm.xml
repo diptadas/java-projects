@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-Mar-2017 22:51:14 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.example.Student" table="student" catalog="lict_mysql">
+        <id name="studentId" type="int">
+            <column name="student_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="100" not-null="true" />
+        </property>
+        <property name="marks" type="int">
+            <column name="marks" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
